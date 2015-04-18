@@ -1,0 +1,176 @@
+body{
+	font-family: "微軟正黑體";
+	background: url("bgg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	max-width: 100%;
+	text-align: center;
+}
+h4{
+	background-color: rgba(255, 255, 255, 0.7);
+	border-radius: 10px;
+}
+html{
+	max-width: 100%;
+	font-family:  "微軟正黑體";
+}
+
+input, button, h2{
+	position: relative;
+	float: left;
+	display: inline;
+	font-family: "宋体", "微軟正黑體";
+}
+
+div.main{
+	background-color: rgba(255, 255, 255, 0.5);
+	color: black	;
+	font-size: 1em;
+	display: inline-block;
+	width: 100%;
+	height: 30%;
+	font-family:  "微軟正黑體";
+	position: absolute;
+	top: 70%;
+	left: 0;
+}
+input{
+	width: 40%;
+	height: 40px;
+	position: absolute;
+	left: 25%;
+	top: 43%;
+	border: #6e8cd7 10px solid;
+	font-weight: bold;
+	font-size: 1.25em;
+	font-family:"微軟正黑體";
+	-webkit-box-shadow: 4px 4px 3px gray;
+}
+button{
+	position: absolute;
+	height: 60px;
+	left: 68%;
+	top: 43%;
+	color: white;
+	font-weight: bold;
+	background-color: #314ac8;
+	font-size: 1em;
+	border-radius: 30px;
+	border: 0;
+	font-family: "宋体", "微軟正黑體";
+	-webkit-box-shadow: 4px 4px 3px gray;
+	margin:0 2%;
+	}
+
+.red{
+	color: red;
+	font-size: 1em;
+	font-weight: bold;
+}
+.main h3{
+	font-size: 1em;
+	font-weight: bold;
+
+}
+
+div[style*="text-align: center;"]{
+	display: none;
+}
+
+
+
+div.media{
+
+	position: absolute;
+	right:0;
+	color: black;
+	margin: 0;
+        display:inline;
+}
+
+div.media a{	display: inline;}
+div.media img{
+	width: 40px;
+	margin: 10px 2%;
+	display: inline;
+}
+
+div.callhelp{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: black;
+	font-size: 1em;
+	z-index: 9999;
+	text-align: center;
+	left: 0;
+	top: 0;
+	text-align: center;
+}
+div.inside{
+	position: absolute;
+	background: url("sticker.jpg");
+	background-size: cover;
+	width: 40%;
+	height: auto;
+	left: 30%;
+	top: 30%;
+	padding: 2%;
+}
+
+div.callhelp p, div.callhelp a{
+text-align: left;
+padding: 3px;
+}
+div.callhelp a{
+	margin: 5px;
+	background-color: #308e56;
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	border-radius: 3px;
+}
+
+div.app{
+	position: absolute;
+	left: 0;
+}
+div.app a{
+	text-decoration: none;
+	color: white;
+	background-color: #308e56;
+	padding: 12px;
+	border-radius: 3px;
+	margin: 3px;
+	box-shadow: 4px 4px 3px rgba(20%,20%,40%,0.5);	
+}
+div.app h1{
+	font-size: 1.5em;
+}
+
+@media screen and (max-width: 780px){
+	body{background:url("bgm.jpg");
+		background-size: cover;}
+	input{width:30%;}
+	div.media{display:inline;}
+	div.app img, div.app h5{
+		display: none;
+	}
+}
+@media screen and (max-width: 480px){
+	body{background:url("bgm.jpg");
+		background-size: cover;}
+	input{width:30%;}
+	div.media{display:none;}
+	div.callhelp{font-size: 0.7em;}
+	div.inside{width: 80%;left: 10%;}
+	div.app img, div.app h5{
+		display: none;
+		font-size: 0.8em;
+	}
+}		
+a:hover{
+	opacity: 0.7;
+}
